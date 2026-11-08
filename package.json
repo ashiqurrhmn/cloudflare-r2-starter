@@ -1,0 +1,21 @@
+{
+  "name": "cloudflare-r2-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Week 1 exercise: a Worker that stores and serves images in a private Cloudflare R2 bucket.",
+  "scripts": {
+    "test": "tsc && node --test lib/files.test.js lib/handler.test.js",
+    "build": "tsc",
+    "dev": "wrangler dev",
+    "jwks": "node scripts/dev-jwks.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.9.3",
+    "wrangler": "~4.80.0"
+  }
+}

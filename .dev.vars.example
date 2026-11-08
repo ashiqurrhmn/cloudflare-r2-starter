@@ -1,0 +1,6 @@
+# Copy this file to .dev.vars. The file is ignored by Git. LOCAL DEVELOPMENT ONLY.
+
+# Where the Worker downloads the public signing keys from while you test locally.
+# This points to the local key server started with: npm run jwks
+# NEVER set JWKS_URL in a deployed Worker.
+JWKS_URL=http://127.0.0.1:8788/jwks

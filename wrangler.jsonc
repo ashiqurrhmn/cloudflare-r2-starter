@@ -1,0 +1,15 @@
+{
+  "name": "intern-r2-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-01",
+  // The bucket is reached through a BINDING called BUCKET. There are no access keys in the code.
+  // With "wrangler dev" the bucket is simulated on your computer. Nothing is created in Cloudflare.
+  "r2_buckets": [
+    { "binding": "BUCKET", "bucket_name": "intern-sandbox-bucket" }
+  ],
+  // Plain variables are PUBLIC configuration. Never put a secret here.
+  "vars": {
+    "FIREBASE_PROJECT_ID": "demo-intern-r2",
+    "ALLOWED_ORIGIN": "http://localhost:5173"
+  }
+}
